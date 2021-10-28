@@ -1,0 +1,4 @@
+To use with pywal:
+1. Symlink "pywal-theme.el.template" to "$HOME/.config/wal/templates/pywal-theme.el"
+2. Symlink "$HOME/.cache/wal/pywal-theme.el" to "pywal-theme.el" after running pywal at least once to generate it.
+3. Refresh colors with "C-c p" after each change.
