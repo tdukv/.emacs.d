@@ -87,7 +87,7 @@
 (global-set-key (kbd "C-c t") 'toggle-transparency)
 ;; transpeancy --^
 
-(load-file "~/.emacs.d/window.el")
+(load-file "~/.config/emacs/window.el")
 (load-theme 'pywal t)
 
 (defun refresh-theme ()
