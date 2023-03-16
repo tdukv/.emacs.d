@@ -87,6 +87,9 @@
 (global-set-key (kbd "C-c t") 'toggle-transparency)
 ;; transpeancy --^
 
+(load-file "~/.config/emacs/sxhkd-mode.el")
+(add-to-list 'auto-mode-alist `(,(rx "sxhkdrc" string-end) . sxhkd-mode))
+
 (load-file "~/.config/emacs/window.el")
 (load-theme 'pywal t)
 
