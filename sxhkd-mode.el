@@ -36,7 +36,7 @@
   "Mode for editing sxhkd configuration files."
   :group 'data)
 
-(defcustom sxhkd-mode-reload-config 'ask
+(defcustom sxhkd-mode-reload-config 'nil
   "Should `sxhkd-mode' reload config after save?
 Can be t, nil or ask"
   :type '(radio (const :tag "Always" t)
@@ -109,7 +109,7 @@ Can be t, nil or ask"
           0
         (end-of-line)
         (forward-char -1)
-        (if (looking-at-p (rx "\\")) 0 1)))))
+        (if (looking-at-p (rx "\\")) 0 6)))))
 
 ;;;###autoload
 (define-derived-mode sxhkd-mode fundamental-mode "Sxhkd"
