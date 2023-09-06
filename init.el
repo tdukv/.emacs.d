@@ -91,11 +91,11 @@
 (add-to-list 'auto-mode-alist `(,(rx "sxhkdrc" string-end) . sxhkd-mode))
 
 (load-file "~/.config/emacs/window.el")
-(load-theme 'pywal t)
+(when window-system (load-theme 'pywal t))
 
 (defun refresh-theme ()
     (interactive)
-    (load-theme 'pywal t))
+    (when window-system (load-theme 'pywal t)))
 
 (global-set-key (kbd "C-c p"  ) 'refresh-theme)
 (global-set-key (kbd "C-c u"  ) 'uncomment-region)
