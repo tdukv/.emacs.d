@@ -19,7 +19,9 @@
 ;; font size (in 1/10px):
 ;;(set-face-attribute 'default nil :height 110)
 
-(setq c-basic-indent 8)
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
 (setq tab-width 4)
 ;; (setq sh-basic-offset 2)
 ;; (setq sh-indentation 2)
